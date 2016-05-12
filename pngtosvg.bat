@@ -1,1 +1,1 @@
-bash main.sh
+bash main.sh %1
