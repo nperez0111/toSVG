@@ -1,10 +1,10 @@
  #!/bin/bash 
-STR=".$1"
+fileType=".$1"
 output="output"
 
-if [ "$STR" == "." ]
+if [ "$fileType" == "." ]
 	then
-	STR=".png"
+	fileType=".png"
 fi
 
 if [ -d "$output" ]; then
@@ -12,7 +12,7 @@ if [ -d "$output" ]; then
 fi
 mkdir "$output"
 
-for i in *$STR; do 
+for i in *$fileType; do 
 	convert "$i" -background white -flatten ${i%.*}.bmp
 	potrace -s ${i%.*}.bmp -o $output/${i%.*}.svg --group --progress
 	rm ${i%.*}.bmp
