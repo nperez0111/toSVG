@@ -22,7 +22,7 @@ for fileName in *$fileType;
 			echo "Remember that file extension should be written without the '.' when calling the command"
 			echo "Check that you are in the correct directory."
 		else
-			convert "$fileName" -background white -flatten "${fileName%.*}.bmp"
+			convert "$fileName" -background white -flatten -trim "${fileName%.*}.bmp"
 			potrace -s "${fileName%.*}.bmp" -o "$outputFolder/${fileName%.*}.svg" --group --progress
 			rm "${fileName%.*}.bmp"
 		fi
