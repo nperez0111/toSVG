@@ -19,6 +19,7 @@ Installation
 	* (This converts the image from bmp to svg)
 3. You should probably add this to your path to use it without having to copy it to every folder you want to use it on.
 	* Just run addToPath.bat file to add it to your path.
+	* Alternatively if you are using another console emulator, copy this to its bin folder.
 4. Just use it.
 
 Technical Stuff
