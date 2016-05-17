@@ -13,7 +13,7 @@ What this does is go through the current directory and searches for every image 
 Installation
 -------------
 
-1. You have to have ImageMagick installed.
+1. You could have ImageMagick installed but I have already added convert.exe in the project folder.
 	* (This converts many image formats into bmp)
 2. You must to have Potrace installed.
 	* (This converts the image from bmp to svg)
