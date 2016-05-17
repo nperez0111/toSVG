@@ -15,7 +15,7 @@ Installation
 
 1. You could have ImageMagick installed but I have already added convert.exe in the project folder.
 	* (This converts many image formats into bmp)
-2. You must to have Potrace installed.
+2. You could have Potrace installed but I have already added potrace.exe and mkbitmap.exe in the project folder.
 	* (This converts the image from bmp to svg)
 3. You should probably add this to your path to use it without having to copy it to every folder you want to use it on.
 	* Just run addToPath.bat file to add it to your path.
